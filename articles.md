@@ -1,3 +1,10 @@
+# Table of Contents
+
+* [Context Managers (The Magic of Python Context Managers)](#context-managers-the-magic-of-python-context-managers)
+* [map(): Processing Iterables Without a Loop](#map-processing-iterables-without-a-loop)
+* [Python 3.9 - Cool New Features](#python-39-cool-new-features)
+* [Python Snippets](#python-snippets)
+
 # Context Managers (The Magic of Python Context Managers)
 
 Source: https://towardsdatascience.com/the-magic-of-python-context-managers-adb92ace1dd0
@@ -60,3 +67,40 @@ list(square_generator) # [4, 16, 64]
 list(square(x) for x in numbers) # [4, 16, 64]
 ```
 
+# Python 3.9 - Cool New Features
+
+Source: https://realpython.com/python39-new-features/
+
+* Better support for Time Zones.
+    * We had to use the `dateutil` module in earlied versions of Python.
+    * The `tzdata` package, containing IANA (Internet Assigned Numbers Authority) time zones data,
+      should be regularly updated. Linux and Mac operating systems have their own IANA time zones database.
+* Simple Updating of Dictionaries
+    * Union operator `|` and in-place union operator `|=` for merging dictionaries and dictionary-like objects.
+    * `defaultdict` = dict subclass that calls a factory function to supply missing values.
+* More flexible decorators.
+* Annotated Type Hints.
+* Upgraded Python Parser.
+    * PEG instead of LL(1).
+    * The old LL(1) parser will be completely removed in Python 3.10.
+    * AST = Abstract Syntax Tree.
+* `“Hello world”.removesuffix(“ world”)`
+* `“Hello world”.rempveprefix(“Hello “)`
+* Type hint definitions for built-in types. For example `numbers: list[float]` instead of `numbers: typing.List[float]`.
+* [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting), used for example inalling package dependencies.
+    * `graphlib` - new model added to the standard lib.
+    * This type of sorting is also useful for planning parallel tasks execution
+      (https://docs.python.org/3.9/library/graphlib.html).
+* Greatest Common Divisor (`math.gcd()`).
+* Least Common Multiple (`math.lcm()`).
+* New HTTP status codes:
+    * 103 (Early Hints).
+    * 425 (Too Early).
+    * 419 (I'm a Teapot) - from Hyper Text Coffee Pot Control Protocol (HTCPCP) :).
+* `python -X dev script_name.py` - run the script in the 
+  [development mode](https://docs.python.org/3.9/library/devmode.html#python-development-mode) 
+  (available since Python 3.7). 
+
+# Python Snippets
+
+[Useful Python snippets](https://www.30secondsofcode.org/python/p/1)
