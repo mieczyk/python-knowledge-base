@@ -12,7 +12,7 @@ The advantages of functional programming and using pure functions:
 * Functions are isolated, so it's easier to debug and test them. Hence, the development process is easier.
 * Pure functions don't change the program's state so it's easier to understand.
 
-Common technics used for a functional programming:
+Common techniques used for a functional programming:
 * **Mapping** (`map()`): transforming values in an iterable to another values.
 * **Filtering** (`filter()`): filtering out items that don't match the condition.
 * **Reducing** (`reduce()`): transforming an iterable into a single cumulative value.
