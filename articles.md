@@ -2,7 +2,7 @@
 
 * [Context Managers (The Magic of Python Context Managers)](#context-managers-the-magic-of-python-context-managers)
 * [map(): Processing Iterables Without a Loop](#map-processing-iterables-without-a-loop)
-* [Python 3.9 - Cool New Features](#python-39-cool-new-features)
+* [Python 3.9 - Cool New Features](#python-39---cool-new-features)
 * [Python Snippets](#python-snippets)
 
 # Context Managers (The Magic of Python Context Managers)
