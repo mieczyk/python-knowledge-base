@@ -1,9 +1,24 @@
 # Table of Contents
 
+* [Caching in Python Using the LRU Cache Strategy](#caching-in-python-using-the-lru-cache-strategy)
 * [Context Managers (The Magic of Python Context Managers)](#context-managers-the-magic-of-python-context-managers)
 * [map(): Processing Iterables Without a Loop](#map-processing-iterables-without-a-loop)
 * [Python 3.9 - Cool New Features](#python-39---cool-new-features)
 * [Python Snippets](#python-snippets)
+
+# Caching in Python Using the LRU Cache Strategy
+
+* Source: https://realpython.com/lru-cache-python/
+* Caching strategies:
+   * First-In/First-Out (FIFO): evicts the oldest entry.
+   * Last-In/First-Out (LIFO): evicts the latest entry.
+   * Least Recently Used (LRU): evicts the least recently used entry.
+   * Most Recently Used (MRU): evicts the most recently used entry.
+   * Least Frequently Used (LFU): evicts the least often accessed entry.
+* Decorator: `@functools.lru_cache(maxsize=128, typed=False)`.
+* *Memoization* - an optimization technique based on remembering/caching a function's results for a specific set of parameters. 
+   So, when the function is called again, with the same set of parameters, the results will be taken from the cache.
+* [`cachetools` module](https://github.com/tkem/cachetools/).
 
 # Context Managers (The Magic of Python Context Managers)
 
