@@ -11,6 +11,12 @@
 
 * Source: https://realpython.com/python-async-features
 * Example scripts: [async_features_in_python](async_features_in_python)
+* [codetiming](https://pypi.org/project/codetiming/) module - part of Python Package Index.
+
+## 2nd approach: Simple Cooperative Concurrency
+
+* The `yield` statement turns a function into a generator. A generator function is called just like any other function in Python, but when the `yield` statement is executed, control is returned to the caller of the function. This is essentially a context switch, as control moves from the generator function to the caller.
+* Once we call the `next()` function the control is given back to the generator function. The context along with all the function's variables is switched back and the function's execution is continued.
 
 # Caching in Python Using the LRU Cache Strategy
 

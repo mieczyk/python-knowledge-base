@@ -1,3 +1,6 @@
+# Result of synchronous invocation: all queued data are processed by 'Task One' 
+# and 'Task Two' has nothing to do.
+
 import queue
 
 def task(name, work_queue):
