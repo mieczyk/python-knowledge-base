@@ -1,13 +1,3 @@
-# Table of Contents
-
-* [Async features in Python](#async-features-in-python)
-* [Caching in Python Using the LRU Cache Strategy](#caching-in-python-using-the-lru-cache-strategy)
-* [Comparison of async await syntax in .NET, Python and JavaScript (by Roberto Prevato)](https://robertoprevato.github.io/Comparisons-of-async-await/)
-* [Context Managers (The Magic of Python Context Managers)](#context-managers-the-magic-of-python-context-managers)
-* [map(): Processing Iterables Without a Loop](#map-processing-iterables-without-a-loop)
-* [Python 3.9 - Cool New Features](#python-39---cool-new-features)
-* [Python Snippets](#python-snippets)
-
 # Async features in Python
 
 * Source: https://realpython.com/python-async-features
@@ -32,6 +22,12 @@
 * *Memoization* - an optimization technique based on remembering/caching a function's results for a specific set of parameters. 
    So, when the function is called again, with the same set of parameters, the results will be taken from the cache.
 * [`cachetools` module](https://github.com/tkem/cachetools/).
+
+# Comparison of async await syntax in .NET, Python and JavaScript
+
+Author: [Roberto Prevato](https://robertoprevato.github.io)
+
+Source: https://robertoprevato.github.io/Comparisons-of-async-await/
 
 # Context Managers (The Magic of Python Context Managers)
 
