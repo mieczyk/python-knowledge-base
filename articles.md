@@ -2,7 +2,7 @@
 
 * [Async features in Python](#async-features-in-python)
 * [Caching in Python Using the LRU Cache Strategy](#caching-in-python-using-the-lru-cache-strategy)
-* [Comparison of async await syntax in .NET, Python and JavaScript](https://robertoprevato.github.io/Comparisons-of-async-await/)
+* [Comparison of async await syntax in .NET, Python and JavaScript (by Roberto Prevato)](https://robertoprevato.github.io/Comparisons-of-async-await/)
 * [Context Managers (The Magic of Python Context Managers)](#context-managers-the-magic-of-python-context-managers)
 * [map(): Processing Iterables Without a Loop](#map-processing-iterables-without-a-loop)
 * [Python 3.9 - Cool New Features](#python-39---cool-new-features)
