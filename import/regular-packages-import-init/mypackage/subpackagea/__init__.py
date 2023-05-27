@@ -1,0 +1,1 @@
+print(f"{__name__} module initialized ({__file__})")
