@@ -1,3 +1,6 @@
+# Runs the tests that cover topics from the official documentation:
+# https://docs.python.org/3/reference/import.html
+
 import pytest
 import os
 
