@@ -16,3 +16,4 @@
 ## Searching
 - `import x.y.z` - Python first tries to import `x`, then `y` and finally `z`. If any of the intermediate imports fail, a `ModuleNotFoundError` is raised.
     - `x.y.z` = fully qualified name.
+- importer = finder + loader.
