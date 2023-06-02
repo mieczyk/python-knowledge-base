@@ -23,7 +23,7 @@ def test_sys_modules_dict_contains_intermediate_paths():
     assert "test.my_package.my_package_A" in sys.modules
     assert "test.my_package.my_package_A.my_module_A" in sys.modules
 
-def test_invalidate_cach():
+def test_invalidate_cache():
     MY_MODULE_PATH = "test.my_package.my_module"
 
     # Load the module
