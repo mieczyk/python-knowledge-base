@@ -16,4 +16,14 @@
 ## Searching
 - `import x.y.z` - Python first tries to import `x`, then `y` and finally `z`. If any of the intermediate imports fail, a `ModuleNotFoundError` is raised.
     - `x.y.z` = fully qualified name.
-- importer = finder + loader.
+- importer = finder (tries to find the loader for a module) + loader (loads the module). The *importer* implements both interfaces.
+	- import path = A list of locations that are searched by the path-based finder for modules to import.
+- Import hooks:
+	- meta hooks - called at the very start of import processing before any other steps are performed (except for the `sys.modules` cache look up).
+
+TODO:
+- import path hooks = ?
+- `sys.path` = ?
+- `sys.meta_path` = ?
+- `sys.path_hooks` = ?
+- https://stackoverflow.com/questions/41941079/what-is-the-difference-between-sys-meta-path-and-sys-path-hooks-importer-obj
