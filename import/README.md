@@ -19,11 +19,13 @@
 - importer = finder (tries to find the loader for a module) + loader (loads the module). The *importer* implements both interfaces.
 	- import path = A list of locations that are searched by the path-based finder for modules to import.
 - Import hooks:
-	- meta hooks - called at the very start of import processing before any other steps are performed (except for the `sys.modules` cache look up).
+	- meta hooks - called at the very start of import processing before any other steps are performed (except for the `sys.modules` cache look up). Registered by addind new finder objects to `sys.meta_path`.
+	- path hooks - called as a part of `sys.path` or `package.__path__` processing, at the moment their associated path item is encountered. Registered by adding new callables so `sys.path_hooks`.
+- `sys.path` - a list of search paths for modules. Except for paths defined in the `PYTHONPATH` environment variable, other paths may be prepended (added before other entries) while running the script:
+	- `python -m module` - current working directory (empty string '').
+	- `python script.py` - the script's directory.
 
 TODO:
-- import path hooks = ?
-- `sys.path` = ?
-- `sys.meta_path` = ?
+- `sys.meta_path` = HOW TO ADD CUSTOM HOOK
 - `sys.path_hooks` = ?
 - https://stackoverflow.com/questions/41941079/what-is-the-difference-between-sys-meta-path-and-sys-path-hooks-importer-obj

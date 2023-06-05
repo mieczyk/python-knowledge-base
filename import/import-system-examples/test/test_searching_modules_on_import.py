@@ -1,5 +1,6 @@
 import sys
 import importlib
+from pathlib import Path
 
 def test_imported_module_goes_to_sys_modules_cache():
     # The module hasn't been imported, yet.
@@ -52,3 +53,10 @@ def test_reload_the_same_module_object_with_importlib_reload():
 
     # It's not always the case!
     assert id(my_module) == id(my_new_module)
+    
+def test_script_directory_path_inserted_into_sys_path():
+    # The pathlib module is a recommended way of dealing with file system paths since Python 3.4
+    test_file_path = Path(__file__).absolute()
+    main_script_dir_path = test_file_path.parent.parent
+    
+    assert str(main_script_dir_path) in sys.path
