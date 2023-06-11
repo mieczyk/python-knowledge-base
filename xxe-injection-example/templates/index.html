@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XML to JSON Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-4 mb-4">XML to JSON Converter</h2>
+
+    <div class="row">
+        <div class="col">
+            <h4>XML</h4>
+            <textarea class="form-control" id="xml" rows="10"></textarea>
+        </div>
+        <div class="col">
+            <h4>JSON</h4>
+            <textarea class="form-control" id="json" rows="10" readonly></textarea>
+        </div>
+    </div>
+
+    <button class="btn btn-primary mt-4" id="convert">Convert</button>
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#convert").click(function(){
+        $.ajax({
+            url: '/convert',
+            data: {'xml': $('#xml').val()},
+            type: 'POST',
+            success: function(response){
+                $("#json").val(JSON.stringify(response, null, 2));
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
