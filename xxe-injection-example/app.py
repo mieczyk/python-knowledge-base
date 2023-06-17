@@ -12,7 +12,7 @@ def index():
 
 @app.route('/convert', methods=['POST'])
 def convert():
-    xml_data = request.form['xml']
+    xml_data = bytes(request.form['xml'], encoding="utf8")
 
     try:
         # Create a custom parser that uses DTD for parsing and allows
